@@ -4,6 +4,9 @@ import { prisma } from './lib/prisma'
 
 export const app = fastify()
 
+const prisma = new PrismaClient()
+
+
 app.post('/users', async (request, reply) => {
   const registerBodySchema = z.object({
     name: z.string(),
@@ -22,4 +25,7 @@ app.post('/users', async (request, reply) => {
   })
 
   return reply.status(201).send()
-})
+
+
+
+

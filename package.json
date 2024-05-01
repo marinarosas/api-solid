@@ -13,11 +13,13 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "20.12.7",
+    "prisma": "5.13.0",
     "tsup": "8.0.2",
     "tsx": "4.8.2",
     "typescript": "5.4.5"
   },
   "dependencies": {
+    "@prisma/client": "5.13.0",
     "@rocketseat/eslint-config": "2.2.2",
     "dotenv": "16.4.5",
     "eslint": "8.57.0",
